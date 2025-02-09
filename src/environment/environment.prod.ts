@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://banking-portal-api-git-shiftersunited-dev.apps.rm2.thpm.p1.openshiftapps.com/api/api',
+  apiUrl: 'https://final-api-shiftersunited-dev.apps.rm2.thpm.p1.openshiftapps.com/api',
   tokenName :  "authToken",
   origin:'http://localhost:4200' 
 };
