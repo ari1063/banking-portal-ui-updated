@@ -177,11 +177,6 @@ jobs:
         insecure_skip_tls_verify: true
         namespace: ${{ env.OPENSHIFT_NAMESPACE }}
 
-    - name: Deploy to OpenShift
-        run:|
-          oc new-app https://github.com/ari1063/banking-portal-ui-updated.git --namespace=shiftersunited-dev
-          oc expose svc/ocphackathon-ui-app --namespace=shiftersunited-dev
-
     # This step should create a deployment, service, and route to run your app and expose it to the internet.
     # https://github.com/redhat-actions/oc-new-app#readme
     - name: Create and expose app
