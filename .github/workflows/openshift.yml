@@ -179,8 +179,8 @@ jobs:
 
     # Start new Build
     - name: Deploy to OpenShift
-    run: |
-		  oc start-build ocphackathon-ui-app
+      run: |
+        oc start-build ocphackathon-ui-app
 
     - name: Print application URL
       env:
